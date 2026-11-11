@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASD Sicilia Powerlifting Natural | Alimena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        asphalt: '#0F0F0F',
+                        charcoal: '#1A1A1A',
+                        chalk: '#F5F5F5',
+                        accent: '#FFD600', // Amarillo Industrial Oficial
+                    },
+                    fontFamily: {
+                        heading: ['Anton', 'sans-serif'],
+                        body: ['Barlow Condensed', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-asphalt text-chalk font-body antialiased selection:bg-accent selection:text-asphalt">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-asphalt/95 backdrop-blur border-b border-accent/20">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-heading text-2xl tracking-wider text-chalk flex items-center gap-2">
+                <span class="bg-accent text-asphalt px-2 py-0.5 rounded-sm">ASD</span>
+                SICILIA <span class="text-accent">POWERLIFTING</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 uppercase tracking-widest text-sm font-semibold">
+                <a href="#filosofia" class="hover:text-accent transition">Filosofia</a>
+                <a href="#sedi" class="hover:text-accent transition">Le Sedi</a>
+                <a href="#discipline" class="hover:text-accent transition">Discipline</a>
+                <a href="#archivio" class="hover:text-accent transition">Archivio Storico</a>
+                <a href="#contatti" class="hover:text-accent transition">Contatti</a>
+            </nav>
+            <a href="#contatti" class="bg-accent text-asphalt font-heading px-5 py-2 uppercase tracking-wider text-lg hover:brightness-110 transition skew-x-[-6deg]">
+                PROVA GRATUITA
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center pt-20">
+        <div class="absolute inset-0 bg-gradient-to-t from-asphalt via-asphalt/85 to-asphalt/50"></div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center py-16">
+            <div class="inline-block bg-accent text-asphalt font-heading px-4 py-1 text-base uppercase tracking-widest mb-6 skew-x-[-6deg]">
+                100% Drug-Free • Alimena (Sicilia)
+            </div>
+            
+            <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl uppercase tracking-wider leading-none mb-4 text-chalk">
+                A.S.D. SICILIA <span class="text-accent">POWERLIFTING</span> NATURAL
+            </h1>
+            
+            <p class="font-heading text-xl md:text-3xl uppercase tracking-widest text-accent/90 mb-8">
+                IL TEMPIO DELLA FORZA E DEL POWERLIFTING AD ALIMENA
+            </p>
+
+            <p class="text-lg md:text-xl text-chalk/80 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Niente scuse, niente doping. Solo ferro, sudore e ghisa vera. Il punto di riferimento per chi vuole superare i propri limiti in modo naturale e guidato da professionisti.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contatti" class="bg-accent text-asphalt font-heading text-xl px-8 py-4 uppercase tracking-wider hover:scale-105 transition skew-x-[-6deg] shadow-lg shadow-accent/20">
+                    UNISCITI AL TEAM
+                </a>
+                <a href="#sedi" class="border-2 border-accent text-accent font-heading text-xl px-8 py-4 uppercase tracking-wider hover:bg-accent hover:text-asphalt transition skew-x-[-6deg]">
+                    SCOPRI LE SEDI
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MANIFIESTO DRUG-FREE -->
+    <section id="filosofia" class="py-20 bg-charcoal border-y border-accent/20 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-heading text-4xl md:text-5xl uppercase tracking-wide mb-6 text-chalk">
+                LA NOSTRA <span class="text-accent">FILOSOFIA</span>
+            </h2>
+            <p class="text-lg md:text-2xl text-chalk/80 leading-relaxed font-light">
+                Qui la forza è pulita. Crediamo nel sudore reale, nella tecnica impeccabile e nell'onore della pedana. 
+                <strong class="text-accent font-semibold">Nessuna scorciatoia, nessun trucco:</strong> solo tu, i chili sul bilanciere e la tua determinazione.
+            </p>
+        </div>
+    </section>
+
+    <!-- SEDI (GARAGE ALIMENA & PALESTRA COMUNALE) -->
+    <section id="sedi" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="font-heading text-4xl md:text-6xl uppercase tracking-wide">LE NOSTRE <span class="text-accent">SEDI</span></h2>
+            <p class="text-chalk/60 uppercase tracking-widest text-sm mt-2">I nostri spazi di allenamento ad Alimena</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-charcoal border border-charcoal p-8 relative group hover:border-accent transition duration-300">
+                <div class="absolute top-0 right-0 bg-accent text-asphalt font-heading px-4 py-1 text-sm uppercase">Garage Alimena</div>
+                <h3 class="font-heading text-3xl uppercase mb-4 mt-2">Spazio Powerlifting</h3>
+                <p class="text-chalk/70 mb-6 text-lg">L'antro della ghisa. Equipaggiamento specifico, bilancieri olimpici, magnesio nell'aria e ambiente focalizzato sulla prestazione.</p>
+                <span class="text-accent font-heading tracking-wider uppercase text-lg flex items-center gap-2">📍 Zona Industriale / Sede Operativa</span>
+            </div>
+            <div class="bg-charcoal border border-charcoal p-8 relative group hover:border-accent transition duration-300">
+                <div class="absolute top-0 right-0 bg-chalk/20 text-chalk font-heading px-4 py-1 text-sm uppercase">Palestra Comunale</div>
+                <h3 class="font-heading text-3xl uppercase mb-4 mt-2">Spazio Comunale Alimena</h3>
+                <p class="text-chalk/70 mb-6 text-lg">Il punto di incontro per la comunità. Spazio multidisciplinare aperto per corsi, preparazione atletica e attività di gruppo.</p>
+                <span class="text-accent font-heading tracking-wider uppercase text-lg flex items-center gap-2">📍 Alimena (PA)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHIVIO STORICO (SECCIÓN PARA AGRUPAR EL SITIO PRIME) -->
+    <section id="archivio" class="py-20 bg-charcoal border-t border-accent/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-4xl md:text-5xl uppercase tracking-wide">ARCHIVIO STORICO & <span class="text-accent">RISULTATI</span></h2>
+                <p class="text-chalk/60 uppercase tracking-widest text-sm mt-2">Il patrimonio della nostra associazione dal sitio originale</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="bg-asphalt p-8 border border-charcoal hover:border-accent transition">
+                    <div class="font-heading text-5xl text-accent mb-2">🏆 ALBO D'ORO</div>
+                    <h3 class="font-heading text-xl uppercase mb-2">Gare e Trofei</h3>
+                    <p class="text-chalk/60 text-sm mb-4">Storico completo di tutte le competizioni regionali e nazionali a cui abbiamo partecipato.</p>
+                    <a href="#contatti" class="text-accent font-heading uppercase text-sm tracking-widest underline">Esplora Archivio Gare &rarr;</a>
+                </div>
+                <div class="bg-asphalt p-8 border border-charcoal hover:border-accent transition">
+                    <div class="font-heading text-5xl text-accent mb-2">📊 RÈCORD</div>
+                    <h3 class="font-heading text-xl uppercase mb-2">Primati Regionali</h3>
+                    <p class="text-chalk/60 text-sm mb-4">I massimali storici ufficiali di Squat, Panca e Stacco registrati dai nostri atleti.</p>
+                    <a href="#contatti" class="text-accent font-heading uppercase text-sm tracking-widest underline">Vedi Tabella Record &rarr;</a>
+                </div>
+                <div class="bg-asphalt p-8 border border-charcoal hover:border-accent transition">
+                    <div class="font-heading text-5xl text-accent mb-2">📜 REGOLAMENTO</div>
+                    <h3 class="font-heading text-xl uppercase mb-2">Normative & WDFPF</h3>
+                    <p class="text-chalk/60 text-sm mb-4">Regolamenti tecnici per il sollevamento peso 100% Drug-Free e certificazioni AICS.</p>
+                    <a href="#contatti" class="text-accent font-heading uppercase text-sm tracking-widest underline">Leggi Documentazione &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contatti" class="py-12 border-t border-charcoal text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-heading text-3xl uppercase mb-4">ENTRA A FAR PARTE DEL MOVIMENTO</h2>
+            <p class="text-chalk/60 mb-6">Contattaci o vieni a trovarci in sede ad Alimena.</p>
+            <div class="text-accent font-heading text-2xl tracking-widest mb-8">#SICILIAPOWERLIFTING</div>
+            <p class="text-xs text-chalk/40">&copy; 2026 ASD Sicilia Powerlifting Natural. Tutti i diritti riservati. Sviluppato per la comunità di Alimena.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
