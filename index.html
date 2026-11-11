@@ -27,39 +27,47 @@
 </head>
 <body class="bg-asphalt text-chalk font-body antialiased selection:bg-accent selection:text-asphalt">
 
-    <!-- HEADER / NAVBAR ADAPTATIVO -->
+    <!-- HEADER / NAVBAR CON MENÚ DEBAJO DEL LOGO EN CELULAR -->
     <header class="fixed top-0 left-0 w-full z-50 bg-asphalt/95 backdrop-blur border-b border-accent/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 md:py-0 md:h-20 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0">
             
-            <!-- Logo Institucional -->
-            <div class="font-heading text-lg sm:text-2xl tracking-wider text-chalk flex items-center gap-1.5">
-                <span class="bg-accent text-asphalt px-1.5 py-0.5 rounded-sm text-sm sm:text-base">ASD</span>
-                <span>SICILIA <span class="text-accent">POWERLIFTING</span></span>
+            <!-- Fila Superior: Logo y Botón CTA -->
+            <div class="w-full md:w-auto flex items-center justify-between">
+                <!-- Logo Institucional -->
+                <div class="font-heading text-lg sm:text-2xl tracking-wider text-chalk flex items-center gap-1.5">
+                    <span class="bg-accent text-asphalt px-1.5 py-0.5 rounded-sm text-sm sm:text-base">ASD</span>
+                    <span>SICILIA <span class="text-accent">POWERLIFTING</span></span>
+                </div>
+
+                <!-- Botón de acción (En celular queda alineado a la derecha) -->
+                <a href="#contatti" class="bg-accent text-asphalt font-heading px-3 sm:px-5 py-1.5 sm:py-2 uppercase tracking-wider text-xs sm:text-lg hover:brightness-110 transition skew-x-[-6deg] whitespace-nowrap md:hidden">
+                    PROVA GRATUITA
+                </a>
             </div>
 
-            <!-- Menú de navegación para PC (Oculto en celular) -->
-            <nav class="hidden md:flex space-x-6 uppercase tracking-widest text-sm font-semibold">
-                <a href="#filosofia" class="hover:text-accent transition">Filosofia</a>
-                <a href="#sedi" class="hover:text-accent transition">Le Sedi</a>
-                <a href="#discipline" class="hover:text-accent transition">Discipline</a>
-                <a href="#archivio" class="hover:text-accent transition">Archivio Storico</a>
-                <a href="#contatti" class="hover:text-accent transition">Contatti</a>
+            <!-- Navegación Reubicada (En celular aparece DEBAJO del logo como botones compactos) -->
+            <nav class="w-full md:w-auto flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-1 uppercase tracking-widest text-xs sm:text-sm font-semibold pt-1 md:pt-0 border-t border-charcoal md:border-none">
+                <a href="#filosofia" class="hover:text-accent transition py-1 text-chalk/90">Filosofia</a>
+                <a href="#sedi" class="hover:text-accent transition py-1 text-chalk/90">Le Sedi</a>
+                <a href="#discipline" class="hover:text-accent transition py-1 text-chalk/90">Discipline</a>
+                <a href="#archivio" class="hover:text-accent transition py-1 text-chalk/90">Archivio</a>
+                <a href="#contatti" class="hover:text-accent transition py-1 text-chalk/90">Contatti</a>
             </nav>
 
-            <!-- Botón de acción (Adaptado para celular y PC) -->
-            <a href="#contatti" class="bg-accent text-asphalt font-heading px-3 sm:px-5 py-2 uppercase tracking-wider text-sm sm:text-lg hover:brightness-110 transition skew-x-[-6deg] whitespace-nowrap">
+            <!-- Botón CTA para pantallas de PC -->
+            <a href="#contatti" class="hidden md:inline-block bg-accent text-asphalt font-heading px-5 py-2 uppercase tracking-wider text-lg hover:brightness-110 transition skew-x-[-6deg] whitespace-nowrap">
                 PROVA GRATUITA
             </a>
 
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative min-h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center pt-24">
+    <!-- HERO SECTION (Ajustado el relleno superior para compensar el header en celular) -->
+    <section class="relative min-h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center pt-28 sm:pt-24">
         <div class="absolute inset-0 bg-gradient-to-t from-asphalt via-asphalt/85 to-asphalt/50"></div>
         
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center py-16">
-            <div class="inline-block bg-accent text-asphalt font-heading px-4 py-1 text-sm sm:text-base uppercase tracking-widest mb-6 skew-x-[-6deg]">
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center py-12 sm:py-16">
+            <div class="inline-block bg-accent text-asphalt font-heading px-4 py-1 text-xs sm:text-base uppercase tracking-widest mb-6 skew-x-[-6deg]">
                 100% Drug-Free • Alimena (Sicilia)
             </div>
             
@@ -67,7 +75,7 @@
                 A.S.D. SICILIA <span class="text-accent">POWERLIFTING</span> NATURAL
             </h1>
             
-            <p class="font-heading text-lg sm:text-2xl md:text-3xl uppercase tracking-widest text-accent/90 mb-8">
+            <p class="font-heading text-base sm:text-2xl md:text-3xl uppercase tracking-widest text-accent/90 mb-8">
                 IL TEMPIO DELLA FORZA E DEL POWERLIFTING AD ALIMENA
             </p>
 
